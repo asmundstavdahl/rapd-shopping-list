@@ -1,0 +1,5 @@
+{
+    "require": {
+        "asmundstavdahl/rapd": "^0.5"
+    }
+}

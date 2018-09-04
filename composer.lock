@@ -1,0 +1,45 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e753586eb69283630af36425a69c57b5",
+    "packages": [
+        {
+            "name": "asmundstavdahl/rapd",
+            "version": "0.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asmundstavdahl/rapd.git",
+                "reference": "8446a7c60a47691f5af6a44de63dd5950ec89bfa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asmundstavdahl/rapd/zipball/8446a7c60a47691f5af6a44de63dd5950ec89bfa",
+                "reference": "8446a7c60a47691f5af6a44de63dd5950ec89bfa",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Rapd": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Super KISS PHP web app library",
+            "time": "2018-08-29T08:12:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
