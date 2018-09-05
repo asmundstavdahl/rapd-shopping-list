@@ -22,3 +22,25 @@ Router::add(new Route(
 		}
 	}
 ));
+
+Router::add(new Route(
+	"new_list",
+	"/new_list",
+	function(){
+		$user = User::current();
+
+		$list = new ShopList();
+
+		$list->patch($_REQUEST);
+		$list->insert();
+
+		$userList = new UserShopList([
+			"shop_list_id" => $list->id,
+			"user_id" => $user->id,
+			"access" => "admin"
+		]);
+		$userList->insert();
+
+		return Router::redirectTo("home");
+	}
+));
