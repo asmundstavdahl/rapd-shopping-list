@@ -39,3 +39,4 @@
 </head>
 <body>
   <div class="container">
+    <?= render("menu") ?>
