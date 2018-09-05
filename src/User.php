@@ -1,7 +1,7 @@
 <?php
 
 use \Rapd\View;
-use \Rapd\Environment;
+use \Rapd\Router;
 
 session_start();
 
@@ -18,11 +18,15 @@ class User extends Entity {
 	}
 
 	static function isLoggedIn() : bool {
-		return self::current() ?true :false;
+		return isset($_SESSION["user"]);
 	}
 
-	static function current() : ?User {
-		return self::findByUsername($_SESSION["user"]);
+	static function current() : User {
+		if(isset($_SESSION["user"])){
+			return self::findByUsername($_SESSION["user"]);
+		} else {
+			Router::redirectTo("login");
+		}
 	}
 
 	static function setSessionUser(string $username) {

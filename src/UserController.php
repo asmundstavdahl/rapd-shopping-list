@@ -23,4 +23,10 @@ class UserController extends Controller {
 			"gotInvalidCredentials" => $gotInvalidCredentials
 		]);
 	}
+
+	public function logout(){
+		session_start();
+		session_destroy();
+		return Router::redirectTo("home");
+	}
 }

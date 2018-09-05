@@ -11,7 +11,7 @@ Router::add(new Route(
 ));
 
 Router::add(new Route(
-	"hello_world",
-	"/world",
-	[\HelloController::class,"world"]
+	"logout",
+	"/logout",
+	[\UserController::class, "logout"]
 ));
