@@ -26,7 +26,7 @@ function tr(string $name, ...$args) : string {
 
 	if(isset($translations[$name][$lang])){
 		array_unshift($args, $translations[$name][$lang]);
-		return call_user_func_array("sprintf", $args);
+		return e(call_user_func_array("sprintf", $args));
 	}
-	return $name;
+	return e($name);
 }
