@@ -7,4 +7,7 @@ return [
 	"Welcome" => [
 		"nb" => "Velkommen, %s",
 	],
+	"List has n items" => [
+		"nb" => "%d linjer",
+	],
 ];

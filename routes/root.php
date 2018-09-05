@@ -11,8 +11,14 @@ Router::add(new Route(
 		if(!User::isLoggedIn()){
 			Router::redirectTo("login");
 		}
+
+		$user = User::current();
+
+		$lists = $user->getShopLists();
+
 		return View::render("home", [
-			"user" => User::current()
+			"user" => $user,
+			"lists" => $lists,
 		]);
 	}
 ));
