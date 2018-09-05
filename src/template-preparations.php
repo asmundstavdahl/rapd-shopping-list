@@ -12,6 +12,10 @@ function render(string $name, array $data = []){
 	return View::render($name, $data);
 }
 
+function e(string $str) : string {
+	return htmlentities($str);
+}
+
 function tr(string $name, ...$args) : string {
 	static $translations = false;
 	if($translations === false){
