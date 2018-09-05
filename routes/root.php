@@ -11,6 +11,8 @@ Router::add(new Route(
 		if(!User::isLoggedIn()){
 			Router::redirectTo("login");
 		}
-		return View::render("home");
+		return View::render("home", [
+			"user" => User::current()
+		]);
 	}
 ));

@@ -17,6 +17,7 @@ Environment::set("TITLE", "rapd/skeleton");
 Environment::set("AUTHOR", "Åsmund Stavdahl");
 Environment::set("DESCRIPTION", "Default description of the rapd/skeleton");
 
+Environment::set("lang", "nb");
 
 use \Rapd\Router;
 
