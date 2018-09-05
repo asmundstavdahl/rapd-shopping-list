@@ -8,10 +8,6 @@ Router::add(new Route(
 	"home",
 	"/",
 	function(){
-		if(!User::isLoggedIn()){
-			Router::redirectTo("login");
-		}
-
 		$user = User::current();
 
 		$lists = $user->getShopLists();
