@@ -23,11 +23,11 @@
   <link rel="stylesheet" href="<?= $ASSET_BASE ?>/Skeleton-2.0.4/css/skeleton.css">
   <!-- Thank you, Dave Gamache, author of Skeleton. http://getskeleton.com/ -->
 
-  <link rel="stylesheet" href="<?= $ASSET_BASE ?>/css/app.css">
+  <link rel="stylesheet" href="<?= $ASSET_BASE ?>/app.css">
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="<?= $ASSET_BASE ?>/js/app.js"></script>
+  <script src="<?= $ASSET_BASE ?>/app.js"></script>
   <script>
     //setTimeout("location.reload()", 5000)
   </script>

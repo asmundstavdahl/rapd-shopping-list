@@ -1,0 +1,10 @@
+
+:root {
+	--color-0: #DDD;
+}
+
+.card {
+	border-left: 0.5em solid;
+	padding: 1em;
+	border-color: var(--color-0);
+}
