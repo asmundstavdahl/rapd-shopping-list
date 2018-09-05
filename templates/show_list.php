@@ -18,4 +18,10 @@
 	<?php endforeach ?>
 </div>
 
+<div class="menu">
+	<a class="button" href="<?= route("clean_list", [$list->id]) ?>">
+		&#x1f5d1;
+	</a>
+</div>
+
 <?= render("footer") ?>

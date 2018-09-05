@@ -44,3 +44,17 @@ Router::add(new Route(
 		return Router::redirectTo("home");
 	}
 ));
+
+Router::add(new Route(
+	"clean_list",
+	"/list/(\d+)/clean",
+	function(int $id){
+		$user = User::current();
+
+		$list = ShopList::findById($id);
+
+		$list->clean();
+
+		return Router::redirectTo("show_list", [$list->id]);
+	}
+));

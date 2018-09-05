@@ -20,4 +20,12 @@ class ShopList extends Entity {
 			)
 		);
 	}
+
+	function clean(){
+		ShopListItem::deleteWhere(
+			"shop_list_id = :shop_list_id AND checked = 1", [
+				":shop_list_id" => $this->id
+			]
+		);
+	}
 }
