@@ -9,4 +9,15 @@ class ShopList extends Entity {
 	function getItems() : array {
 		return self::findAllBelonging(ShopListItem::class);
 	}
+
+	function userHasAccess(User $user) : bool {
+		return 0 < count(
+			self::findAllBelongingWhere(
+				UserShopList::class,
+				"user_id = :user_id", [
+					":user_id" => $user->id
+				]
+			)
+		);
+	}
 }

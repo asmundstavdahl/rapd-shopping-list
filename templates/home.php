@@ -7,7 +7,11 @@
 <?php if (count($lists)): ?>
 	<?php foreach ($lists as $list): ?>
 		<div class="list card">
-			<h3><?= $list->title ?></h3>
+			<h3>
+				<a href="<?= route("show_list", [$list->id]) ?>">
+					<?= $list->title ?>
+				</a>
+			</h3>
 			<h4><?= tr("List has n items", count($list->getItems())) ?></h4>
 		</div>
 	<?php endforeach ?>
