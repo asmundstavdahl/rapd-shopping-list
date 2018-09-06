@@ -6,6 +6,13 @@ class Entity extends \Rapd\PersistableEntity {
 	use \Rapd\Prototype;
 
 	/**
+	 * Optional column-def overwrite for fields.
+	 *
+	 * @see gensql.php
+	 */
+	static $columns = [];
+
+	/**
 	 * Using entity classes' fields and getTable, get each belonging entity
 	 * of specified class that "belongs" to $this.
 	 * 

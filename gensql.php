@@ -28,11 +28,15 @@ foreach($files as $file):
 
 CREATE TABLE IF NOT EXISTS <?= $className::getTable() ?> (
 <?php foreach($className::$fields as $field => $type): ?>
-	<?= $prefix. $field ?> <?=
-	array_key_exists($field, $types)
-		?$types[$field]
-		:$types[$type]
-	?>
+	<?php if (array_key_exists($field, $className::$columns)): ?>
+		<?= "{$prefix}{$field} " . $className::$columns[$field] ?>
+	<?php else: ?>
+		<?= $prefix. $field ?> <?=
+		array_key_exists($field, $types)
+			?$types[$field]
+			:$types[$type]
+		?>
+	<?php endif ?>
 
 <?php $prefix = ", "; ?>
 <?php endforeach; ?>

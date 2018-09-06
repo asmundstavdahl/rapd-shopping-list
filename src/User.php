@@ -15,6 +15,10 @@ class User extends Entity {
 		"name" => string::class,
 	];
 
+	static $columns = [
+		"username" => "TEXT NOT NULL UNIQUE",
+	];
+
 	function getShopLists() : array {
 		$userLists = UserShopList::findAllWhere("user_id = :user_id", [
 			":user_id" => $this->id
