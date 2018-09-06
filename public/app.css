@@ -1,5 +1,6 @@
 
 :root {
+	--text-color: #000;
 	--color-0: #DDD;
 }
 
@@ -55,4 +56,9 @@
 }
 .item.checked {
 	order: 2;
+}
+
+a.covert:not(:hover) {
+	color: var(--text-color);
+	text-decoration: none;
 }

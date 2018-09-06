@@ -1,6 +1,10 @@
 <div class="menu">
 	<?php if (User::isLoggedIn()): ?>
-		<big>&lt; <?= User::current()->name ?> &gt;</big>
+		<big>
+			<a href="<?= route("home") ?>" class="covert">
+				&lt; <?= User::current()->name ?> &gt;
+			</a>
+		</big>
 	<?php endif ?>
 	<div class="spacer"></div>
 	<?php if (User::isLoggedIn()): ?>
