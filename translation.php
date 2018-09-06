@@ -28,9 +28,28 @@ $translations = [
 	"List has n items" => [
 		"nb" => "%d linjer",
 	],
+	"Wrong password" => [
+		"nb" => "Feil passord? Prøv igjen.",
+		"en" => "Wrong password? Try again.",
+	],
+	"Log in" => [
+		"nb" => "Logg på",
+	],
+	"Log out" => [
+		"nb" => "Logg av",
+	],
+	"Username" => [
+		"nb" => "Brukernavn",
+	],
+	"Password" => [
+		"nb" => "Passord",
+	],
 
 	"Enter new item" => [
 		"nb" => "Legg til en linje"
+	],
+	"Enter new list" => [
+		"nb" => "Legg til en liste"
 	],
 	"Submit" => [
 		"nb" => "Send inn"

@@ -19,7 +19,7 @@
 
 <form action="<?= route("new_list") ?>" method="POST">
 	<fieldset>
-		<legend>Enter new list</legend>
+		<legend><?= tr("Enter new list") ?></legend>
 		<input type="text" name="title">
 		<input type="submit" value="<?= tr("Submit") ?>">
 	</fieldset>
