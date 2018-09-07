@@ -1,6 +1,6 @@
 <div class="item flex row <?= $item->checked ?"checked" :"" ?>">
 	<div class="buttons">
-		<a class="button" href="<?= route("check_item", [$item->id]) ?>">
+		<a class="icon button" href="<?= route("check_item", [$item->id]) ?>">
 			<?php if ($item->checked): ?>
 				&#x2a2f;
 			<?php else: ?>

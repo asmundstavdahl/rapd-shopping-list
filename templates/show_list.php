@@ -21,7 +21,7 @@
 <hr>
 
 <div class="flex row">
-	<a class="button" href="<?= route("clean_list", [$list->id]) ?>">
+	<a class="icon button" href="<?= route("clean_list", [$list->id]) ?>">
 		&#x1f5d1;
 	</a>
 </div>
