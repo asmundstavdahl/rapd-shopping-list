@@ -9,7 +9,7 @@ if(file_exists("vendor/autoload.php")){
 
 $files = explode(
 	"\n", 
-	trim(`grep -RFl '\$fields' src/`)
+	trim(`grep -RFl ' \$fields' src/`)
 );
 
 $types = [
@@ -23,6 +23,12 @@ $types = [
 
 foreach($files as $file):
 	$className = preg_replace('`src/|\.php`', "", $file);
+
+	if(!is_array($className::$fields)){
+		error_log("No fields in {$className}");
+		continue;
+	}
+
 	$prefix = "  ";
 ?>
 
