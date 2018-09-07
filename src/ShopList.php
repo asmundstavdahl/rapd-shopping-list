@@ -10,6 +10,10 @@ class ShopList extends Entity {
 		return self::findAllBelonging(ShopListItem::class);
 	}
 
+	function getUsers() : array {
+		return self::findAllRelatedVia(User::class, UserShopList::class);
+	}
+
 	function userHasAccess(User $user) : bool {
 		return 0 < count(
 			self::findAllBelongingWhere(

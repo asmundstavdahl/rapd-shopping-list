@@ -13,6 +13,11 @@
 				</a>
 			</h3>
 			<h4><?= tr("List has n items", count($list->getItems())) ?></h4>
+			<h4><?= tr("List has n users", count($list->getUsers())) ?></h4>
+
+			<a class="icon button" href="<?= route("configure_list", [$list->id]) ?>">
+				&#x2699;
+			</a>
 		</div>
 	<?php endforeach ?>
 <?php endif ?>

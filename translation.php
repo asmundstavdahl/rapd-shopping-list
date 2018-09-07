@@ -26,7 +26,10 @@ $translations = [
 		"nb" => "Velkommen, %s",
 	],
 	"List has n items" => [
-		"nb" => "%d linjer",
+		"nb" => "%d linje(r)",
+	],
+	"List has n users" => [
+		"nb" => "%d bruker(e)",
 	],
 	"Wrong password" => [
 		"nb" => "Feil passord? Prøv igjen.",
@@ -56,5 +59,21 @@ $translations = [
 	],
 	"Confirm deletion" => [
 		"nb" => "Bekreft sletting"
+	],
+
+	"Grant access to another user" => [
+		"nb" => "Gi adgang til en annen bruker",
+	],
+	"Allow user" => [
+		"nb" => "Gi adgang til bruker",
+	],
+	"Users with access" => [
+		"nb" => "Brukere med adgang",
+	],
+	"Name" => [
+		"nb" => "Navn",
+	],
+	"Revoke access" => [
+		"nb" => "Fjern tillatelse",
 	],
 ];
