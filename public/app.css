@@ -62,3 +62,13 @@ a.covert:not(:hover) {
 	color: var(--text-color);
 	text-decoration: none;
 }
+
+.icon.button {
+	font-size: 2.8rem;
+	padding: 0 19px;
+	min-width: 60px;
+}
+
+table .button {
+	margin-bottom: 0;
+}
