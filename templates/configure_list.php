@@ -31,9 +31,15 @@
 			<big><?= $user->name ?></big>
 		</td>
 		<td>
-			<a class="button" href="<?= route("deny_list_access", [$list->id, $user->id]) ?>">
-				<?= tr("Revoke access") ?>
-			</a>
+			<?php if ($user->id != User::current()->id): ?>
+				<a class="button" href="<?= route("deny_list_access", [$list->id, $user->id]) ?>">
+					<?= tr("Revoke access") ?>
+				</a>
+			<?php else: ?>
+				<a class="button">
+					<?= tr("Revoke access") ?>
+				</a>
+			<?php endif ?>
 		</td>
 	</tr>
 <?php endforeach ?>
